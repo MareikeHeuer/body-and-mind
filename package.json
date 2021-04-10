@@ -1,0 +1,22 @@
+{
+  "name": "body-and-mind",
+  "version": "1.0.0",
+  "description": "Body & Mind Yoga Retreat Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MareikeHeuer/body-and-mind.git"
+  },
+  "author": "Mareike",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MareikeHeuer/body-and-mind/issues"
+  },
+  "homepage": "https://github.com/MareikeHeuer/body-and-mind#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
