@@ -4,23 +4,26 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: $color-grey-dark;
+  /* padding: 30px; will give the nice white border around the whole webpage*/
   padding: 3rem;
 }
 
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
-  backface-visibility: hidden;
+  backface-visibility: hidden; /*prevents animation looking shaky in the end*/
   margin-bottom: 4rem;
 
   &__text--main {
-    display: block;
+    display: block; /* because span element is inline element by default*/
     font-size: 5.5rem;
     font-weight: 400;
     letter-spacing: 1.5rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-out; /*animation faster in the beginning then slower */
+    /* animation-iteration-count: 3;  will do 3 times*/
+    /* animation-delay: 3s; */
   }
 
   &__text--sub {

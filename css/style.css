@@ -52,7 +52,33 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
+  /* padding: 30px; will give the nice white border around the whole webpage*/
   padding: 3rem; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  /*prevents animation looking shaky in the end*/
+  margin-bottom: 4rem; }
+  .heading-primary__text--main {
+    display: block;
+    /* because span element is inline element by default*/
+    font-size: 5.5rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /*animation faster in the beginning then slower */
+    /* animation-iteration-count: 3;  will do 3 times*/
+    /* animation-delay: 3s; */ }
+  .heading-primary__text--sub {
+    display: block;
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 0.26rem;
+    animation: moveInRight 1s ease-out; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
