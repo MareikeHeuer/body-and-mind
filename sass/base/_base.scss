@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* this will automatically inherit whatever box sizing values are set to all parts of the page */
+}
+
+html {
+  font-size: 62.5%;
+  /* font-size: 10px; */
+  /* Change to 10px to make it easier to convert all pixel units to rem,. 10px is 1 rem. This is the root font size
+  Because users CANNOT change font size in their browser if we set it in px,  convert to %
+  divide 10 / 16 = 62.5% */
+}
+
+body {
+  box-sizing: border-box; /* changes the box model so borders and paddings are no longer added to total height or width */
+}
