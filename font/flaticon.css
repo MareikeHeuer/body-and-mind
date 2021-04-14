@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?dc62f3f774c8dfb28e37591f39406e24") format("truetype"),
+url("./flaticon.woff?dc62f3f774c8dfb28e37591f39406e24") format("woff"),
+url("./flaticon.woff2?dc62f3f774c8dfb28e37591f39406e24") format("woff2"),
+url("./flaticon.eot?dc62f3f774c8dfb28e37591f39406e24#iefix") format("embedded-opentype"),
+url("./flaticon.svg?dc62f3f774c8dfb28e37591f39406e24#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-give-love:before {
+    content: "\f101";
+}
+.flaticon-heart-1:before {
+    content: "\f102";
+}
+.flaticon-heart-2:before {
+    content: "\f103";
+}
+.flaticon-heart-3:before {
+    content: "\f104";
+}
+.flaticon-heart:before {
+    content: "\f105";
+}
+.flaticon-leaf:before {
+    content: "\f106";
+}
+.flaticon-love-birds:before {
+    content: "\f107";
+}
+.flaticon-meditation-1:before {
+    content: "\f108";
+}
+.flaticon-meditation-2:before {
+    content: "\f109";
+}
+.flaticon-meditation:before {
+    content: "\f10a";
+}
+.flaticon-receive:before {
+    content: "\f10b";
+}
+.flaticon-user:before {
+    content: "\f10c";
+}
