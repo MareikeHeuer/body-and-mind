@@ -30,6 +30,15 @@
     }
   }
 
+  &--orange {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
   &::after {
     content: ""; /*to make the element appear we need to specify a content property*/
     display: inline-block; /*Also needs to be specified for it to appear on the page*/
