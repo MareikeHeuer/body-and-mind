@@ -23,13 +23,42 @@
     clip-path: circle(50%);
 
     transform: translateX(-3rem) skewX(12deg); // best way to put space between a floating element is transform instead of margin
+    position: relative;
+    overflow: hidden; // hides overflow from image
   }
 
   &__img {
     height: 100%;
+    transform: translateX(-4rem) scale(1.2); // moves images
+    backface-visibility: hidden;
+    transition: all 0.5s;
   }
 
   &__text {
     transform: skewX(12deg);
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(0.3rem) brightness(80%);
   }
 }
