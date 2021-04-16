@@ -1,0 +1,35 @@
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  background-color: $color-white;
+  border-radius: 0.3rem;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg);
+
+  & > * {
+    // transform: skewX(12deg); // only works with text, because we already have transform in the shape and it takes presedence
+  }
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50%);
+    shape-outside: circle(50%);
+    -webkit-clip-path: circle(50%);
+    clip-path: circle(50%);
+
+    transform: translateX(-3rem) skewX(12deg); // best way to put space between a floating element is transform instead of margin
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__text {
+    transform: skewX(12deg);
+  }
+}
