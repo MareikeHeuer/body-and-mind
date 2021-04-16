@@ -13,6 +13,7 @@ html {
   /* Change to 10px to make it easier to convert all pixel units to rem,. 10px is 1 rem. This is the root font size
   Because users CANNOT change font size in their browser if we set it in px,  convert to %
   divide 10 / 16 = 62.5% */
+  overflow-x: hidden;
 }
 
 body {
