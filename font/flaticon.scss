@@ -2,11 +2,11 @@ $flaticon-font: "flaticon";
 
 @font-face {
     font-family: $flaticon-font;
-    src: url("./flaticon.ttf?dc62f3f774c8dfb28e37591f39406e24") format("truetype"),
-url("./flaticon.woff?dc62f3f774c8dfb28e37591f39406e24") format("woff"),
-url("./flaticon.woff2?dc62f3f774c8dfb28e37591f39406e24") format("woff2"),
-url("./flaticon.eot?dc62f3f774c8dfb28e37591f39406e24#iefix") format("embedded-opentype"),
-url("./flaticon.svg?dc62f3f774c8dfb28e37591f39406e24#flaticon") format("svg");
+    src: url("./flaticon.ttf?03804fffe418f6329050d3e7239b02ff") format("truetype"),
+url("./flaticon.woff?03804fffe418f6329050d3e7239b02ff") format("woff"),
+url("./flaticon.woff2?03804fffe418f6329050d3e7239b02ff") format("woff2"),
+url("./flaticon.eot?03804fffe418f6329050d3e7239b02ff#iefix") format("embedded-opentype"),
+url("./flaticon.svg?03804fffe418f6329050d3e7239b02ff#flaticon") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -21,53 +21,49 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 
 $flaticon-map: (
-    "give-love": "\f101",
-    "heart-1": "\f102",
-    "heart-2": "\f103",
-    "heart-3": "\f104",
-    "heart": "\f105",
+    "facebook-circular-logo": "\f101",
+    "facebook": "\f102",
+    "heart": "\f103",
+    "instagram-2": "\f104",
+    "instagram-3": "\f105",
     "leaf": "\f106",
-    "love-birds": "\f107",
-    "meditation-1": "\f108",
-    "meditation-2": "\f109",
-    "meditation": "\f10a",
-    "receive": "\f10b",
-    "user": "\f10c",
+    "meditation-1": "\f107",
+    "meditation": "\f108",
+    "pinterest-circular-logo-symbol": "\f109",
+    "twitter-2": "\f10a",
+    "twitter-3": "\f10b",
 );
 
-.flaticon-give-love:before {
-    content: map-get($flaticon-map, "give-love");
+.flaticon-facebook-circular-logo:before {
+    content: map-get($flaticon-map, "facebook-circular-logo");
 }
-.flaticon-heart-1:before {
-    content: map-get($flaticon-map, "heart-1");
-}
-.flaticon-heart-2:before {
-    content: map-get($flaticon-map, "heart-2");
-}
-.flaticon-heart-3:before {
-    content: map-get($flaticon-map, "heart-3");
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
 }
 .flaticon-heart:before {
     content: map-get($flaticon-map, "heart");
 }
+.flaticon-instagram-2:before {
+    content: map-get($flaticon-map, "instagram-2");
+}
+.flaticon-instagram-3:before {
+    content: map-get($flaticon-map, "instagram-3");
+}
 .flaticon-leaf:before {
     content: map-get($flaticon-map, "leaf");
-}
-.flaticon-love-birds:before {
-    content: map-get($flaticon-map, "love-birds");
 }
 .flaticon-meditation-1:before {
     content: map-get($flaticon-map, "meditation-1");
 }
-.flaticon-meditation-2:before {
-    content: map-get($flaticon-map, "meditation-2");
-}
 .flaticon-meditation:before {
     content: map-get($flaticon-map, "meditation");
 }
-.flaticon-receive:before {
-    content: map-get($flaticon-map, "receive");
+.flaticon-pinterest-circular-logo-symbol:before {
+    content: map-get($flaticon-map, "pinterest-circular-logo-symbol");
 }
-.flaticon-user:before {
-    content: map-get($flaticon-map, "user");
+.flaticon-twitter-2:before {
+    content: map-get($flaticon-map, "twitter-2");
+}
+.flaticon-twitter-3:before {
+    content: map-get($flaticon-map, "twitter-3");
 }
