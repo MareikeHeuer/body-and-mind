@@ -13,6 +13,8 @@
     border-radius: 50%;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+    text-align: center;
+    cursor: pointer;
   }
 
   &__background {
@@ -41,7 +43,7 @@
     z-index: 1500;
 
     opacity: 0;
-    width: 0; // removes cursor
+    width: 0; // to remove the cursor
     transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
 
@@ -92,7 +94,7 @@
     }
   }
 
-  // ~ sibling selector and then specify which sibling (background)
+  // Functionality
   &__checkbox:checked ~ &__background {
     transform: scale(80);
   }
@@ -100,5 +102,55 @@
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+  }
+
+  // Icon
+  &__icon {
+    position: relative;
+    margin-top: 3.5rem;
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px; // becuase it should never change no matter the bast font size
+      background-color: $color-grey-dark-3;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+    &::before {
+      top: -0.8rem;
+    }
+    &::after {
+      top: 0.8rem;
+    }
+  }
+
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0; // move position back to zero so both lines can form a cross
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
   }
 }
