@@ -1,3 +1,22 @@
+/*
+0 - 600px:    Phone
+600 - 900px:  Tablet portrait
+900 - 1200px: Tablet landscape
+1200 - 1800:  where our normal styles apply
+1800px + :    Desktop
+*/
+/*
+BREAKPOINT ARGUMENTS
+- big-desktop
+- tab-land
+- tab-port
+- phone
+
+1em = 16px
+*/
+/* rem and ems NOT affected by root font size setting in media queries
+1rem or em ALWAYS equal to font size comin from browser (16px)
+If user changes that font size it will change, no matter what we have in our code.*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -39,9 +58,17 @@ html {
   font-size: 62.5%;
   /* font-size: 10px; */
   /* Change to 10px to make it easier to convert all pixel units to rem,. 10px is 1 rem. This is the root font size
-  Because users CANNOT change font size in their browser if we set it in px,  convert to %
-  divide 10 / 16 = 62.5% */
+  Because users CANNOT change font size in their browser if we set it in px,  convert to % */
   overflow-x: hidden; }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;

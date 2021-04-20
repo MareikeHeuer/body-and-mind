@@ -6,3 +6,60 @@
     clear: both; // will clear both floats, left and right
   }
 }
+
+// Media query manager
+/*
+0 - 600px:    Phone
+600 - 900px:  Tablet portrait
+900 - 1200px: Tablet landscape
+1200 - 1800:  where our normal styles apply
+1800px + :    Desktop
+*/
+
+// @mixin respond-phone {
+//   @media (max-width: 600px) {
+//     @content;
+//   }
+// }
+
+/*
+BREAKPOINT ARGUMENTS
+- big-desktop
+- tab-land
+- tab-port
+- phone
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+}
+
+// no px here either, because if user changes default font size media queries wont be affected by that
+
+/* rem and ems NOT affected by root font size setting in media queries
+1rem or em ALWAYS equal to font size comin from browser (16px)
+If user changes that font size it will change, no matter what we have in our code.*/
