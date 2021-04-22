@@ -609,10 +609,14 @@ body {
   padding: 4rem 0; }
   @media only screen and (max-width: 56.25em) {
     .footer {
-      padding: 8rem 0; } }
+      padding-bottom: 0;
+      padding-top: 5rem; } }
   .footer__logo-box {
     text-align: center;
-    margin-bottom: 4rem; }
+    margin: 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__logo-box {
+        margin: 0; } }
     .footer__logo-box--img {
       height: 10rem;
       width: 13rem; }
@@ -620,18 +624,38 @@ body {
     width: 15rem;
     height: auto; }
   .footer__navigation {
-    display: inline-block; }
+    display: inline-block;
+    margin-top: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        margin-top: 0; } }
   .footer__list {
     list-style: none;
     font-size: 1.6rem; }
+    @media only screen and (max-width: 75em) {
+      .footer__list {
+        padding-left: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .footer__list {
+        padding-left: 0;
+        text-align: center; } }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
   .footer__icon-list {
-    text-align: right;
+    padding-left: 15rem;
     font-size: 2.3rem;
     letter-spacing: 1.1rem; }
+    @media only screen and (max-width: 75em) {
+      .footer__icon-list {
+        padding-left: 13rem;
+        letter-spacing: 0.2rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .footer__icon-list {
+        padding-left: 0;
+        text-align: center; } }
   .footer__icon-link:link, .footer__icon-link:visited {
     text-decoration: none;
     color: #f7f7f7;
