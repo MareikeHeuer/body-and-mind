@@ -9,8 +9,18 @@
   font-size: 1.6rem;
   transform: skewX(-12deg);
 
-  & > * {
-    // transform: skewX(12deg); // only works with text, because we already have transform in the shape and it takes presedence
+  // & > * {
+  //   // transform: skewX(12deg); // only works with text, because we already have transform in the shape and it takes presedence
+  // }
+
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+
+  @include respond(phone) {
+    transform: skewX(0);
   }
 
   &__shape {
@@ -25,6 +35,10 @@
     transform: translateX(-3rem) skewX(12deg); // best way to put space between a floating element is transform instead of margin
     position: relative;
     overflow: hidden; // hides overflow from image
+
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
   }
 
   &__img {
@@ -36,6 +50,10 @@
 
   &__text {
     transform: skewX(12deg);
+
+    @include respond(phone) {
+      transform: skewX(0);
+    }
   }
 
   &__caption {
