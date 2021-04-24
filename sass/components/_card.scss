@@ -13,6 +13,7 @@
     height: 52rem;
     transition: all 0.8s ease;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden; // hides backpart of an element, will display backside of card normally
     height: 50rem;
     border-radius: 0.3rem;
